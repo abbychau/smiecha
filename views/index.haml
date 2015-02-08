@@ -1,0 +1,49 @@
+!!! XML
+!!!
+%html{html_attrs('ja')}
+  %head
+    %title= 'smiecha'
+    %link(rel="stylesheet" href="css/index.css" type="text/css" media="all")
+    %link(href="css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet")
+    %link(href="css/bootstrap.min.css" rel="stylesheet")
+    %link(rel="stylesheet" href="css/spectrum.css")
+    %link(rel="stylesheet" href="css/docs.css")
+    %script(src="js/jquery-1.9.1.js")
+    %script(src="js/jquery-ui-1.10.3.custom.min.js")
+    %script(src="js/bootstrap.min.js")
+    %script(type="text/javascript")
+    %script(type="text/javascript" src="js/base64.js")
+    %script(type="text/javascript" src="js/canvas2image.js")
+    %script(type="text/javascript" src="js/websocket.js")
+    %script(type="text/javascript" src="js/spectrum.js")
+    %script(type="text/javascript" src="js/prettify.js")
+    %script(type="text/javascript" src="js/toc.js")
+    %script(type="text/javascript" src="js/docs.js")
+    %script(type="text/javascript" src="js/draw.js")
+  %body#body(onselectstart="return false")
+    %div(class="navber navbar-fixed-top")
+      %div(class="navbar-inner")
+        %div(class="container")
+          %h1 smiecha
+      %br
+      %div.row
+        %div.span0.5
+        %div.span3.5
+          %pre
+            %input(type='text' id='flat')
+            %div#slider
+            %br
+          %button(onclick="saveData()")
+            保存
+        %div.span8
+          %canvas#myCanvas(width="1500px" height="800px")
+            HTML5　Canvasに対応したブラウザーを使用してください。
+      %div.row
+        %div.span0.5
+        %div.span11.5
+          %input(id="input" type="text")
+      %div.row
+        %div.span0.5
+        %div.span11.5
+          %pre
+            %div#msg
