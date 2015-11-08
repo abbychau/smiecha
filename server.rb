@@ -8,7 +8,7 @@ require 'erb'
 require 'haml'
 require 'em-websocket'
 
-set :bind, '172.16.230.57'
+set :bind, 'echatto.herokuapp.com'
 set :port, 80
 set :public_dir, './public/'
 
