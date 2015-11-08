@@ -4,7 +4,7 @@ require 'em-websocket'
 Process.daemon(nochdir=true) if ARGV[0] == "-D"
 connections = Array.new
 
-EventMachine::WebSocket.start(:host => "172.16.230.57", :port => 51234) do |ws|
+EventMachine::WebSocket.start(:host => "echatto.herokuapp.com", :port => 51234) do |ws|
   ws.onopen {
     ws.send "server: ws connected"
     connections.push(ws) unless connections.index(ws)
