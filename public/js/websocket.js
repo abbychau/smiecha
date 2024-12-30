@@ -1,5 +1,5 @@
 $(function(){
-  ws = new WebSocket("ws://echatto.herokuapp.com:51234");
+  ws = new WebSocket("ws://127.0.0.1:51234");
   var can = document.getElementById("myCanvas");
   var context = can.getContext("2d");
 

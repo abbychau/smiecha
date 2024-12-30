@@ -21,12 +21,13 @@ A real-time collaborative drawing chat application built with Ruby and WebSocket
 
 1. Install dependencies:
 ```sh
+gem install sinatra rackup puma
 bundle install
 ```
 
 2. Start the server:
 ```sh
-bundle exec shotgun main.rb -p 80 -o 127.0.0.1
+ruby main.rb -p 80 -o 127.0.0.1
 ```
 
 3. Open `http://localhost:9393` in your browser
