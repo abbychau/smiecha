@@ -1,35 +1,30 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    em-websocket (0.5.1)
+    em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
-      http_parser.rb (~> 0.6.0)
-    eventmachine (1.0.7)
+      http_parser.rb (~> 0)
+    eventmachine (1.2.7)
     haml (5.0.0)
       temple (>= 0.8.0)
       tilt
-    http_parser.rb (0.6.0)
-    mustermann (2.0.2)
-      ruby2_keywords (~> 0.0.1)
+    http_parser.rb (0.8.0)
     rack (2.2.6.3)
-    rack-protection (2.2.3)
-      rack
-    ruby2_keywords (0.0.5)
     shotgun (0.9)
       rack (>= 1.0)
-    sinatra (2.2.3)
-      mustermann (~> 2.0)
-      rack (~> 2.2)
-      rack-protection (= 2.2.3)
-      tilt (~> 2.0)
+    sinatra (4.1.1)
     temple (0.8.2)
     tilt (2.0.11)
 
 PLATFORMS
   ruby
+  x64-mingw-ucrt
 
 DEPENDENCIES
   em-websocket
   haml
   shotgun
   sinatra
+
+BUNDLED WITH
+   2.5.22
